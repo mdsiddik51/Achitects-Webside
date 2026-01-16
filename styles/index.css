@@ -149,10 +149,61 @@ nav{
 .sponcer-companis img{
     filter: grayscale(100%);
 }
+/* features related styles */
+#section-title-border{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+.features{
+    gap: 140px;
+}
+.feature-card-section .feture-card-titel{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.feature-card-section{
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+}
+#experience-bage{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.features-img img{
+    width: 100%;
+}
+/* footer related styles */
+.footer-section{
+    display: grid;
+    background-color: #FF900E;
+    margin: 130px 240px;
+    max-width: 4444px;
+    height: 90px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-section p{
+    color: #424242;
+    font-size: 1.25rem;
+}
 /* responsive media query */
 @media screen and (max-width: 576px){
     .navbar, 
     .nav-links,
+    .features,
     .teams{
         flex-direction: column;
     }
@@ -177,11 +228,23 @@ nav{
         justify-items: center;
         gap: 2.5em;
     }
+    #experience-bage{
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+    .footer-section{
+        height: 80px;
+        max-width: 2000px;
+        margin: 30px 40px;
+        padding: 10px;
+    }
+
 }
 
 /* mediyam devide */
 @media screen and (min-width: 576px) and (max-width: 992px){
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .our-featurs{
@@ -193,5 +256,15 @@ nav{
         grid-template-columns: repeat(2,1fr);
         justify-items: center;
         gap: 3rem;
+    }
+     #experience-bage{
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+        .footer-section{
+        height: 70px;
+        max-width: 3000px;
+        margin: 50px 70px;
+        padding: 20px;
     }
 }
